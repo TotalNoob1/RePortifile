@@ -1,0 +1,198 @@
+/*This is for googl nexus 5 width viewing  */
+/* NOTE: find out why the ipad media query is being used for a nexus 5 viewing*/
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.heading{
+  width: 100%;
+
+}
+.headingtext{
+  text-align: right;
+}
+.name{
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 300%
+}
+.namecaption{
+  margin-top: 2px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 150%;
+  margin-bottom: 0px;
+}
+.logo{
+  width: 20%;
+  height: auto;
+  position: relative;
+  float: left;
+  bottom: 100px;
+  margin-top: 0px;
+  max-width: 115px;
+}
+.line{
+  position: relative;
+  width: 100%;
+  bottom: 90px
+}
+.htmlpic{
+  width: 100%;
+}
+.htmlcsspic{
+  width: 100%;
+  bottom: 50px;
+  position: relative;
+}
+.subtitle{
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 300%;
+  font-family: 'Quicksand', sans-serif;
+}
+.appprojects{
+  width: 100%;
+}
+.appfiy{
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Jura', sans-serif;
+  margin: 5px auto;
+}
+.appstorepic{
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+.links{
+  text-align: center;
+  font-size: 125%;
+}
+.sunflowerproject{
+  width: 100%;
+}
+.sunflowerpic{
+  display: block;
+  margin: auto;
+  width: 50%;
+  height:auto;
+  position: relative;
+
+}
+.sunflower{
+  text-align: center;
+  position: relative;
+  left: 3%;
+  font-size: 300%;
+  font-family: 'Jura', sans-serif;
+  margin: 5px auto;
+}
+.sunflowerlink{
+  position: relative;
+}
+.bokeh{
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Jura', sans-serif;
+  margin: 5px auto;
+}
+.bokehproject{
+  width: 100%;
+}
+.bokehpic{
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: auto;
+}
+.lineproject{
+  width: 100%;
+  position: relative;
+  bottom: 20px;
+}
+.squarecontiner{
+  width: 100%;
+}
+.square{
+  height: 75px;
+  width: 75px;
+  margin: auto;
+}
+.bluecolor{
+  background-color:#02b3e4;
+}
+.blackcolor{
+  background-color: #2d3c49;
+}
+.darkbluecolor{
+  background-color: #7d97ad;
+}
+.colorhex{
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 125%;
+}
+.stylelink{
+  text-decoration: none;
+  color: #797d80;
+}
+.aboutme{
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 0px;
+  font-size: 125%;
+  text-indent: 10px;
+}
+
+/*This is for ipad viewing*/
+@media screen and (min-width:680px)/* NOTE: find out why this media query was being used for screens less then 600px */ {
+  .appprojects,.sunflowerproject{
+    width: 50%;
+  }
+  .sunflowerpic,.appstorepic{
+    width: 80%;
+  }
+  .squarecontiner{
+    width: 33%;
+  }
+  .colorhex{
+    font-size: 200%;
+  }
+  .aboutme,.links{
+    font-size: 150%;
+  }
+  .htmlcsspic{
+    width: 80%;
+    margin: auto 10%;
+  }
+}
+/*these are just a minor breakpoint for the Html and css pic */
+@media screen and (min-width:1000px) {
+  .htmlcsspic{
+    width: 60%;
+    margin: auto 20%;
+  }
+}
+/*This is a major breakpoint for desktop*/
+@media screen and (min-width:1150px) {
+  .htmlpic{
+    width: 50%;
+  }
+  .htmlcsspic{
+    width: 100%;
+    margin: auto 0%;
+  }
+  .aboutmecontent{
+    width: 40%;
+    position: relative;
+    margin: auto 5%;
+  }
+  .sunflowerproject,.bokehproject,.appprojects{
+    width: 33%;
+  }
+  .bokehpic{
+    width: 80%;
+  }
+}
